@@ -1,0 +1,28 @@
+config general
+	option check_interval '300'
+
+config ai
+	option api_url 'https://api.deepseek.com/chat/completions'
+	option api_key ''
+	option model 'deepseek-chat'
+
+config thresholds
+	option cpu '80'
+	option memory '85'
+	option disk '90'
+	option temperature '75'
+
+config push
+	option type 'none'
+	option token ''
+	option telegram_chat_id ''
+
+config report
+	option push_enabled '1'
+	option daily_hour '8'
+	option weekly_day '1'
+	option weekly_hour '8'
+
+config optimize
+	option auto_enabled '0'
+	option interval '3600'
