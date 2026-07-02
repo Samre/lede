@@ -37,7 +37,7 @@ define Package/ai-monitor/install
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/ai-monitor.init $(1)/etc/init.d/ai-monitor
 	$(INSTALL_DIR) $(1)/etc/config
-	touch $(1)/etc/config/ai-monitor
+	$(INSTALL_DATA) ./files/ai-monitor.uci $(1)/etc/config/ai-monitor
 endef
 
 define Package/ai-monitor/conffiles
